@@ -1,7 +1,7 @@
 <template>
   <div class="component">
     <van-steps direction="vertical" :active="-1">
-      <van-step v-for="(item, index) in education" :key="index">
+      <van-step v-for="(item, index) in company" :key="index">
         <div>{{item.name}}</div>
         <p>{{item.startTime}} —— {{item.endTime}}</p>
       </van-step>
@@ -12,13 +12,13 @@
 <script>
 import { Step, Steps } from 'vant'
 export default {
-  name: 'index-education',
+  name: 'index-company',
   components: {
     [Steps.name]: Steps,
     [Step.name]: Step
   },
   props: {
-    education: {
+    company: {
       type: Array,
       required: true
     }

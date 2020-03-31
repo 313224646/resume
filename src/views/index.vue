@@ -1,16 +1,26 @@
 <template>
   <div class="page">
-    <index-info />
-    <index-education />
+    <index-info :user="user.base" />
+    <index-education :education="user.education" />
+    <index-company :company="user.company" />
+    <index-project :project="user.project" />
   </div>
 </template>
 
 <script>
+import USER from '@/assets/json/user'
 export default {
   name: 'index',
   components: {
     'index-info': () => import('@comp/index-info'),
-    'index-education': () => import('@comp/index-education')
+    'index-education': () => import('@comp/index-education'),
+    'index-company': () => import('@comp/index-company'),
+    'index-project': () => import('@comp/index-project')
+  },
+  data () {
+    return {
+      user: USER
+    }
   }
 }
 </script>
