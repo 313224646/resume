@@ -85,6 +85,34 @@ const user = {
     introduction: '属于深圳社区管理系统下的子系统，以社区为单位，实现社区不同数据的信息收集、管理、分析和利用。本人独立负责该项目，与产品经理沟通需求、将UI设计图转换成页面、对接后端数据。',
     technology: 'vue、vuex、element、axios',
     difficulty: '按钮级的用户权限，创建表格的自定义数据以及属性，以及相应的增删改。'
+  }],
+  skill: [{
+    skill: 'Webpack',
+    sales: 20
+  }, {
+    skill: 'NodeJs',
+    sales: 25
+  }, {
+    skill: 'Html',
+    sales: 30
+  }, {
+    skill: 'React',
+    sales: 40
+  }, {
+    skill: 'Css',
+    sales: 60
+  }, {
+    skill: 'ElementUI',
+    sales: 70
+  }, {
+    skill: 'VantUI',
+    sales: 75
+  }, {
+    skill: 'JavaScript',
+    sales: 80
+  }, {
+    skill: 'Vue',
+    sales: 85
   }]
 }
 

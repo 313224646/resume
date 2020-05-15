@@ -4,6 +4,7 @@
     <index-education :education="user.education" />
     <index-company :company="user.company" />
     <index-project :project="user.project" />
+    <index-skill :skill="user.skill" />
   </div>
 </template>
 
@@ -15,7 +16,8 @@ export default {
     'index-info': () => import('@comp/index-info'),
     'index-education': () => import('@comp/index-education'),
     'index-company': () => import('@comp/index-company'),
-    'index-project': () => import('@comp/index-project')
+    'index-project': () => import('@comp/index-project'),
+    'index-skill': () => import('@comp/index-skill'),
   },
   data () {
     return {

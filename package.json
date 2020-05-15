@@ -11,6 +11,7 @@
     "create": "node vue.create.js"
   },
   "dependencies": {
+    "@antv/f2": "^3.6.4-beta.3",
     "axios": "^0.19.2",
     "lodash": "^4.17.15",
     "vant": "^2.5.2",
