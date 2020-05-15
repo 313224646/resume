@@ -2,7 +2,7 @@
   <div class="component">
     <van-steps direction="vertical" :active="-1">
       <van-step v-for="(item, index) in education" :key="index">
-        <div>{{item.name}}</div>
+        <div class="name">{{item.name}}</div>
         <p>{{item.startTime}} —— {{item.endTime}}</p>
       </van-step>
     </van-steps>
@@ -34,4 +34,7 @@ export default {
   background-color #fff
   border-radius 6px
   padding 10px 0
+.name
+  color #333333
+  margin-bottom 6px
 </style>

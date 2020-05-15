@@ -13,11 +13,11 @@
       </div>
       <div class="info-item">
         <div class="info-item-normal">
-          <a href="tel:18620800179" class="info-underline">{{user.phone}}</a>
-          （
           <base-icon icon="icon--" size="1.2" />
+          &
           <base-icon icon="icon-weixin" class="info-marl" size="1.2" />
-          ）
+          :
+          <a href="tel:18620800179" class="info-underline">{{user.phone}}</a>
         </div>
       </div>
     </div>
@@ -57,7 +57,7 @@ export default {
   top 25px
   transform-origin 0 100%
   transform scale(1.6, 1.6)
-  filter brightness(0%)
+  filter brightness(30%)
 .info
   padding 16px 6px 16px 20px
   flex auto
@@ -80,7 +80,7 @@ export default {
     color #333333
     text-decoration underline
   .info-marl
-    margin-left 6px
+    margin-left 2px
 .github
   padding 6px 6px 0 0
 </style>
