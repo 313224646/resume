@@ -1,5 +1,6 @@
 <template>
   <div class="component">
+    <index-title title="工作经历"></index-title>
     <van-steps direction="vertical" :active="-1">
       <van-step v-for="(item, index) in company" :key="index">
         <div class="name">{{item.name}}</div>
@@ -15,7 +16,8 @@ export default {
   name: 'index-company',
   components: {
     [Steps.name]: Steps,
-    [Step.name]: Step
+    [Step.name]: Step,
+    'index-title': () => import('@comp/index-title')
   },
   props: {
     company: {
@@ -33,7 +35,8 @@ export default {
 .component
   background-color #fff
   border-radius 6px
-  padding 10px 0
+  padding 40px 0 10px
+  position: relative;
 .name
   color #333333
   margin-bottom 6px

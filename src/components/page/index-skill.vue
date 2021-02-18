@@ -1,5 +1,6 @@
 <template>
   <div class="component">
+    <index-title title="技能分布"></index-title>
     <canvas id="container"></canvas>
   </div>
 </template>
@@ -9,6 +10,9 @@ import F2 from '@antv/f2'
 
 export default {
   name: 'index-skill',
+  components: {
+    'index-title': () => import('@comp/index-title')
+  },
   props: {
     skill: {
       type: Array,
@@ -71,7 +75,9 @@ export default {
 <style scoped lang="stylus">
 .component
   border-radius 6px
-  overflow hidden
+  padding 20px 0 0 0
+  position: relative;
+  background-color: #fff;
 #container
   width 100%
   min-height 280px

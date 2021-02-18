@@ -1,5 +1,6 @@
 <template>
   <div class="component">
+    <index-title title="项目实践"></index-title>
     <van-collapse v-model="activeNames">
       <van-collapse-item 
         v-for="(item, index) in project" 
@@ -25,7 +26,8 @@ export default {
   name: 'index-project',
   components: {
     [Collapse.name]: Collapse,
-    [CollapseItem.name]: CollapseItem
+    [CollapseItem.name]: CollapseItem,
+    'index-title': () => import('@comp/index-title')
   },
   props: {
     project: {
@@ -44,7 +46,9 @@ export default {
 <style scoped lang="stylus">
 .component
   border-radius 6px
-  overflow hidden
+  padding 50px 0 0
+  position: relative;
+  background-color: #fff;
 .indent
   text-indent 4ex 
 .text

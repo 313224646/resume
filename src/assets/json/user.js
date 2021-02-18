@@ -3,8 +3,9 @@ const user = {
     name: '吴上海',
     workYears: 3,
     hometown: '广东',
-    age: '25',
+    age: '26',
     phone: '18620800179',
+    sex: '男',
     avatar: require('@i/avatar.png'),
   },
   education: [{
@@ -12,11 +13,11 @@ const user = {
     startTime: '2011-09-01',
     endTime: '2014-06-08'
   }, {
-    name: '广东轻工职业技术学院',
+    name: '广东轻工职业技术学院（肆业）',
     startTime: '2014-09-01',
     endTime: '2017-06-08'
   }, {
-    name: '自考本科（深圳大学）',
+    name: '深圳大学（自考中）',
     startTime: '2019-07-01',
     endTime: '至今'
   }],
@@ -93,22 +94,22 @@ const user = {
     skill: 'NodeJs',
     sales: 25
   }, {
-    skill: 'Html',
+    skill: 'React',
     sales: 30
   }, {
-    skill: 'React',
+    skill: 'ElementUI',
     sales: 40
   }, {
-    skill: 'Css',
+    skill: 'VantUI',
     sales: 60
   }, {
-    skill: 'ElementUI',
+    skill: 'Html',
     sales: 70
   }, {
-    skill: 'VantUI',
+    skill: 'Css',
     sales: 75
   }, {
-    skill: 'JavaScript',
+    skill: 'JS',
     sales: 80
   }, {
     skill: 'Vue',

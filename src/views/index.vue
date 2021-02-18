@@ -31,7 +31,7 @@ export default {
 .page
   min-height 100vh
   background-color #F6F6F6
-  padding 15px
+  padding 15px 20px
   & > div:nth-of-type(n+2)
     margin-top 10px 
 </style>
